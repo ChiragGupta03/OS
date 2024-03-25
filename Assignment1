@@ -1,0 +1,183 @@
+1) Use of man command ?
+
+
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ cal
+     March 2024       
+Su Mo Tu We Th Fr Sa  
+                1  2  
+ 3  4  5  6  7  8  9  
+10 11 12 13 14 15 16  
+17 18 19 20 21 22 23  
+24 25 26 27 28 29 30  
+31                    
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ man cal
+
+
+CAL(1)                              BSD General Commands Manual                             CAL(1)
+
+NAME
+     cal, ncal — displays a calendar and the date of Easter
+
+SYNOPSIS
+     cal [-3hjy] [-A number] [-B number] [[month] year]
+     cal [-3hj] [-A number] [-B number] -m month [year]
+     ncal [-3bhjJpwySM] [-A number] [-B number] [-W number] [-s country_code] [[month] year]
+     ncal [-Jeo] [-A number] [-B number] [year]
+     ncal [-CN] [-H yyyy-mm-dd] [-d yyyy-mm]
+
+DESCRIPTION
+     The cal utility displays a simple calendar in traditional format and ncal offers an alterna‐
+     tive layout, more options and the date of Easter.  The new format is a little cramped but it
+     makes a year fit on a 25x80 terminal.  If arguments are not specified, the current month is
+     displayed.
+
+     The options are as follows:
+
+     -h      Turns off highlighting of today.
+
+     -J      Display Julian Calendar, if combined with the -o option, display date of Orthodox
+             Easter according to the Julian Calendar.
+
+     -e      Display date of Easter (for western churches).
+
+     -j      Display Julian days (days one-based, numbered from January 1).
+
+     -m month
+             Display the specified month.  If month is specified as a decimal number, appending
+             ‘f’ or ‘p’ displays the same month of the following or previous year respectively.
+
+     -o      Display date of Orthodox Easter (Greek and Russian Orthodox Churches).
+
+     -p      Print the country codes and switching days from Julian to Gregorian Calendar as they
+             are assumed by ncal.  The country code as determined from the local environment is
+             marked with an asterisk.
+
+     -s country_code
+             Assume the switch from Julian to Gregorian Calendar at the date associated with the
+             country_code.  If not specified, ncal tries to guess the switch date from the local
+             environment or falls back to September 2, 1752.  This was when Great Britain and her
+             colonies switched to the Gregorian Calendar.
+
+     -w      Print the number of the week below each week column.
+
+     -y      Display a calendar for the specified year. This option is implied when a year but no
+             month are specified on the command line.
+
+     -3      Display the previous, current and next month surrounding today.
+
+     -1      Display only the current month. This is the default.
+
+
+
+
+
+
+2) Use of uname command ?
+
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ uname
+Linux
+
+
+
+3) Use of pwd ?
+
+ sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ pwd
+/home/sunbeam/Desktop/Linux_Practice
+
+
+
+4) Use od hostname?
+
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ hostname
+sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx
+
+
+5) Use of date?
+
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ date
+Monday 25 March 2024 04:05:17 PM IST
+
+
+6) Use of ls ,dir?
+
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ ls Chirag
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ ls
+Chirag
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ dir
+Chirag
+
+
+7) Use of cal?
+
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ cal
+     March 2024       
+Su Mo Tu We Th Fr Sa  
+                1  2  
+ 3  4  5  6  7  8  9  
+10 11 12 13 14 15 16  
+17 18 19 20 21 22 23  
+24 25 26 27 28 29 30  
+31 
+
+
+8) Use of cat?
+
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ ls
+Chirag  File1.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ cat >> File.txt
+Chirag
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ ls
+Chirag  File1.txt  File.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ cat File.txt
+Chirag
+
+9) Use of cat>> ?
+
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ cat >> File.txt
+Chirag
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ ls
+Chirag  File1.txt  File.txt
+
+
+10) Use of cp?
+
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ ls
+Chirag  File1.txt  File.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ cat File.txt
+Chirag
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ cp File1.txt File2.txt sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ ls
+Chirag  File1.txt  File2.txt  File.txt
+
+
+11) Use of mv?
+
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ mv File1.txt File3.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ ls
+Chirag  File2.txt  File3.txt  File.txt
+
+12) Use of tac,rev?
+
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ rev File.txt
+garihC
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ tac File.txt
+Chirag
+
+14) Use of wc?
+
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ wc File.txt
+1 1 7 File.txt
+
+
+15) Use of mkdir?
+
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ mkdir Sinbeam
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ ls
+Chirag  File3.txt  File.txt  Sinbeam
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$ 
+
+
+
+
+
+
+
