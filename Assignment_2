@@ -1,0 +1,202 @@
+
+
+1)
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$  ls -t
+'os assignment'   java_practice      core_java   Templates
+ Downloads        Desktop            Music       Videos
+ linux_practice   java_practice_1    Pictures    Documents
+ OS_class_notes   Java240344221003   Public      snap
+
+2)
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$  ls -S
+ core_java   Java240344221003   Music            Public
+ Desktop     java_practice     'os assignment'   snap
+ Documents   java_practice_1    OS_class_notes   Templates
+ Downloads   linux_practice     Pictures         Videos
+ 
+ 3)
+ sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$  ls -i
+2098686  core_java         1863466  java_practice_1  1835104  Public
+1835101  Desktop           2099409  linux_practice   1835014  snap
+1835105  Documents         1835106  Music            1835103  Templates
+1835102  Downloads         2099410 'os assignment'   1835108  Videos
+2106255  Java240344221003  2099272  OS_class_notes
+2097667  java_practice     1835107  Pictures
+
+
+4)
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$  ls -R
+.:
+dir2  prac1.txt  prac2.txt  prac3.txt
+
+./dir2:
+sample.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$  
+
+5)
+
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$  cat > Pracname.txt
+Gupta
+Chirag
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$  cat >> Pracname.txt
+Bhopal MP
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$  cat Pracname.txt
+Gupta
+Chirag
+Bhopal MP
+
+
+
+
+6)
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:-3480:~/linux_practice$ ls -l 
+total 20
+drwxrwxr-x 2 sunbeam sunbeam 4096 Mar 25 17:21 dir2
+-rw-rw-r-- 1 sunbeam sunbeam    7 Mar 26 17:56 prac1.txt
+-rw-rw-r-- 1 sunbeam sunbeam   21 Mar 25 18:26 prac2.txt
+-rw-rw-r-- 1 sunbeam sunbeam   21 Mar 25 18:49 prac3.txt
+-rw-rw-r-- 1 sunbeam sunbeam   37 Mar 26 17:47 Pracname.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx::~/linux_practice$ touch -t 202109211213 prac1.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx::~/linux_practice$ ls -l 
+total 20
+drwxrwxr-x 2 sunbeam sunbeam 4096 Mar 25 17:21 dir2
+-rw-rw-r-- 1 sunbeam sunbeam    7 Sep 21  2021 prac1.txt
+-rw-rw-r-- 1 sunbeam sunbeam   21 Mar 25 18:26 prac2.txt
+-rw-rw-r-- 1 sunbeam sunbeam   21 Mar 25 18:49 prac3.txt
+-rw-rw-r-- 1 sunbeam sunbeam   37 Mar 26 17:47 Pracname.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx::~/linux_practice$ 
+
+
+
+
+
+
+7)
+
+
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$  mkdir one
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$  cd one
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$  touch 1.txt 11.txt 111.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$  mkdir two
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$  cd two
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$  touch 2.txt 22.txt 222.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/Desktop/Linux_Practice$  mkdir three
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ touch 3.txt 33.txt 333.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ mkdir four
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ cd four
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/linux_practice/one/two/three/four$ touch 4.txt 44.txt 444.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/linux_practice/one/two/three/four$ mkdir five
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/linux_practice/one/two/three/four$ cd five
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/linux_practice/one/two/three/four/five$ touch 5.txt 55.txt 555.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/linux_practice/one/two/three/four/five$ 
+
+
+
+
+8)
+
+i)
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$:~/linux_practice$ ls one/two/three/four/five
+555.txt  55.txt  5.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$:~/linux_practice$ 
+
+ii)
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$~/linux_practice$ cat > one/two/three/four/44.txt
+Bharat Agrawal
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$~/linux_practice$ cat  one/two/three/four/44.txt
+Chirag Gupta
+
+iii)
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$:~/linux_practice$ rm one/two/three/four/five/555.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$:~/linux_practice$ ls -R
+.:
+dir2  one  prac1.txt  prac2.txt  prac3.txt  Pracname.txt
+
+./dir2:
+sample.txt
+
+./one:
+111.txt  11.txt  1.txt  two
+
+./one/two:
+222.txt  22.txt  2.txt  three
+
+./one/two/three:
+333.txt  33.txt  3.txt  four
+
+./one/two/three/four:
+444.txt  44.txt  4.txt  five
+
+./one/two/three/four/five:
+55.txt  5.txt
+
+
+iv)
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$:~/linux_practice$ cd one/two/three/four
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$:~/linux_practice/one/two/three/four$ cd five
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$:~/linux_practice/one/two/three/four/five$ 
+
+v)
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$:~/linux_practice/one/two/three/four/five$ cat >  ~/linux_practice/one/two/three/3.txt 
+dmc course
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$:~/linux_practice/one/two/three/four/five$ cat   ~/linux_practice/one/two/three/3.txt 
+dmc course
+
+
+vi)
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$:~/linux_practice/one/two/three/four/five$ ls ~/linux_practice/one/two 
+222.txt  22.txt  2.txt  three
+
+
+vii)
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$:~/linux_practice/one/two/three/four/five$ rm ~/linux_practice/one/two/222.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/linux_practice/one/two/three/four/five$ ls ~/linux_practice/one/two
+22.txt  2.txt  three
+
+
+viii)
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx::~/linux_practice/one/two/three/four/five$ cd 
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ cd ~/linux_practice/one
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/linux_practice/one$ 
+
+ix)
+
+sunbeam@sunbeam-Inspiron-3480:~/linux_practice/one$ ls ~/linux_practice/one/two/three/four/five
+55.txt  5.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/linux_practice/one$ rm ~/linux_practice/one/two/three/four/five/*
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/linux_practice/one$ ls ~/linux_practice/one/two/three/four/five
+
+x)
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/linux_practice/one$ rm -R ~/linux_practice/one/two/three/four/five
+
+
+xi)
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/linux_practice/one$ rm -R ~/linux_practice/one/two/three/four
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/linux_practice/one$ ls ~/linux_practice/one/two/three
+333.txt  33.txt  3.txt
+
+
+xii)
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/linux_practice/one$ cd ~
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ 
+
+
+9)
+
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/linux_practice/one/two/three$ ls -l
+total 4
+-rw-rw-r-- 1 sunbeam sunbeam  0 Mar 26 18:20 333.txt
+-rw-rw-r-- 1 sunbeam sunbeam  0 Mar 26 18:20 33.txt
+-rw-rw-r-- 1 sunbeam sunbeam 11 Mar 26 18:43 3.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/linux_practice/one/two/three$ touch -t 2012031119 3.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~/linux_practice/one/two/three$ ls -l
+total 4
+-rw-rw-r-- 1 sunbeam sunbeam  0 Mar 26 18:20 333.txt
+-rw-rw-r-- 1 sunbeam sunbeam  0 Mar 26 18:20 33.txt
+-rw-rw-r-- 1 sunbeam sunbeam 11 Dec  3  2020 3.txt
+
+
+
+
+
+
