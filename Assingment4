@@ -1,0 +1,78 @@
+1)sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$  cat > data.txt
+LInux is OPen source
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ ls data.txt
+data.txt
+sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ cat data.txt
+LInux is OPen source
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+
+
+2)sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ wc data.txt
+  6  25 144 data.txt
+  
+  
+  
+  
+3)sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ grep "files" data.txt
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+
+4)sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ grep -w "file" data.txt
+In Linux everything is file
+
+
+
+
+5)sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ grep -v "files" data.txt
+LInux is OPen source
+In Linux everything is file
+
+
+
+
+6)sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ grep "have" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+7)sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ grep  "^f" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+
+8)sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ grep "\.$" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+
+
+9)sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ head -5 data.txt | tail -3
+files have permissions.
+files have inode no.
+files have size.
+
+10) sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ head -2 data.txt
+LInux is OPen source
+In Linux everything is file
+
+
+11)sunbeam@sunbeam-HP-Pavilion-Gaming-Laptop-15-ec0xxx:~$ tail -3 data.txt
+files have inode no.
+files have size.
+there are several types of files
+
